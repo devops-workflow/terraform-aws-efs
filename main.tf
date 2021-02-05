@@ -90,7 +90,7 @@ resource "aws_security_group_rule" "egress" {
 # TODO: use alias module instead. This does CNAME
 module "dns" {
   source  = "cloudposse/route53-cluster-hostname/aws"
-  version = "0.2.1"
+  version = "0.12.0"
   name    = "${module.label.name}"
   ttl     = "${var.dns_ttl}"
   zone_id = "${var.zone_id}"
